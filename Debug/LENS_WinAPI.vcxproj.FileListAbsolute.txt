@@ -1,0 +1,3 @@
+C:\Users\Helena\Desktop\Lenguaje Ensamblador\PIA\PIA_LENS\LENS_WinAPI\Debug\LENS_WinAPI.exe
+C:\Users\Helena\Desktop\Lenguaje Ensamblador\PIA\LENS_WinAPI\Debug\LENS_WinAPI.exe
+C:\Users\Helena\Downloads\2076294 Ruiz Ramírez Helena PIA_LENS\Debug\LENS_WinAPI.exe
