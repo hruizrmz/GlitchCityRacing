@@ -1,1 +1,19 @@
-﻿  LENS_WinAPI.vcxproj -> C:\Users\Helena\Downloads\2076294 Ruiz Ramírez Helena PIA_LENS\Debug\LENS_WinAPI.exe
+﻿  main.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(284,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(380,3): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(381,3): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(388,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(437,54): warning C4244: '=': conversion from '_Rep' to 'float', possible loss of data
+          with
+          [
+              _Rep=__int64
+          ]
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(690,10): warning C4101: 'numberBuffer': unreferenced local variable
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(689,10): warning C4101: 'numberTitle': unreferenced local variable
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(875,12): warning C4101: 'numberBuffer': unreferenced local variable
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(874,12): warning C4101: 'numberTitle': unreferenced local variable
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(1090,6): warning C4101: 'boxX': unreferenced local variable
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(1197,6): warning C4101: 'boxX': unreferenced local variable
+C:\Users\Helena\Documents\GitHub\GlitchCityRacing\main.cpp(1255,6): warning C4101: 'boxX': unreferenced local variable
+  LENS_WinAPI.vcxproj -> C:\Users\Helena\Documents\GitHub\GlitchCityRacing\Debug\LENS_WinAPI.exe

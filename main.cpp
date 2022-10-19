@@ -128,19 +128,19 @@ public:
 		if (!fake) {
 			switch (color) {
 			case 1: {
-				ptr = TEXT("Notas/morado.png");
+				ptr = TEXT("Sprites/Notas/morado.png");
 				pos.X = 157;
 				pos.Y = 126;
 				break;
 			}
 			case 2: {
-				ptr = TEXT("Notas/azul.png");
+				ptr = TEXT("Sprites/Notas/azul.png");
 				pos.X = 317;
 				pos.Y = 166;
 				break;
 			}
 			case 3: {
-				ptr = TEXT("Notas/rosa.png");
+				ptr = TEXT("Sprites/Notas/rosa.png");
 				pos.X = 730;
 				pos.Y = 205;
 				break;
@@ -150,19 +150,19 @@ public:
 		else {
 			switch (color) {
 			case 1: {
-				ptr = TEXT("Notas/moradoFake.png");
+				ptr = TEXT("Sprites/Notas/moradoFake.png");
 				pos.X = 157;
 				pos.Y = 126;
 				break;
 			}
 			case 2: {
-				ptr = TEXT("Notas/azulFake.png");
+				ptr = TEXT("Sprites/Notas/azulFake.png");
 				pos.X = 317;
 				pos.Y = 166;
 				break;
 			}
 			case 3: {
-				ptr = TEXT("Notas/rosaFake.png");
+				ptr = TEXT("Sprites/Notas/rosaFake.png");
 				pos.X = 730;
 				pos.Y = 205;
 				break;
@@ -272,10 +272,10 @@ public:
 	}
 	void boostNote() {
 		if (!fake) {
-			ptr = TEXT("Notas/amarillo.png");
+			ptr = TEXT("Sprites/Notas/amarillo.png");
 		}
 		else {
-			ptr = TEXT("Notas/amarilloFake.png");
+			ptr = TEXT("Sprites/Notas/amarilloFake.png");
 		}
 	}
 };
@@ -398,12 +398,12 @@ int totalScore = 0;
 int highScore;
 void saveHighScore() {
 	fstream file;
-	file.open("highScore.txt", ios::in);
+	file.open("Other/highScore.txt", ios::in);
 	if (file.is_open()) {
 		file >> highScore;
 		if (totalScore > highScore) {
 			file.close();
-			file.open("highScore.txt", ios::trunc | ios::out);
+			file.open("Other/highScore.txt", ios::trunc | ios::out);
 			file << totalScore;
 			highScore = totalScore;
 		}
@@ -706,17 +706,17 @@ void Init()
 
 	//Inicializar el puntero tipo unsigned char 'ptrBack' que contiene la direccion inicial en memoria del arreglo de pixeles de la imagen especificada en el primer parametro
 	//y en la variable dmnBack de tipo DIMENSION* estan los valores de ANCHO y ALTO de la imagen.
-	ptrStart = CargaImagen(TEXT("GameStart.png"), &dmnStart);
-	ptrOver = CargaImagen(TEXT("GameOver.png"), &dmnOver);
-	ptrWon = CargaImagen(TEXT("GameWon.png"), &dmnWon);
-	ptrNubes = CargaImagen(TEXT("Fondo/nubes.png"), &dmnNubes);
-	ptrCity = CargaImagen(TEXT("Fondo/city.png"), &dmnCity);
-	ptrPalms = CargaImagen(TEXT("Fondo/palms.png"), &dmnPalms);
-	ptrCalle = CargaImagen(TEXT("Fondo/calle.png"), &dmnCalle); //puntero a la imagen
-	ptrBox = CargaImagen(TEXT("hitbox.png"), &dmnBox);
+	ptrStart = CargaImagen(TEXT("Screens/GameStart.png"), &dmnStart);
+	ptrOver = CargaImagen(TEXT("Screens/GameOver.png"), &dmnOver);
+	ptrWon = CargaImagen(TEXT("Screens/GameWon.png"), &dmnWon);
+	ptrNubes = CargaImagen(TEXT("Screens/Fondo/nubes.png"), &dmnNubes);
+	ptrCity = CargaImagen(TEXT("Screens/Fondo/city.png"), &dmnCity);
+	ptrPalms = CargaImagen(TEXT("Screens/Fondo/palms.png"), &dmnPalms);
+	ptrCalle = CargaImagen(TEXT("Screens/Fondo/calle.png"), &dmnCalle); //puntero a la imagen
+	ptrBox = CargaImagen(TEXT("Sprites/hitbox.png"), &dmnBox);
 	ptrTempo = CargaImagen(TEXT("UI/tempoBar.png"), &dmnTempo);
-	ptrCarro = CargaImagen(TEXT("carro.png"), &dmnCarro);
-	ptrItem = CargaImagen(TEXT("ItemBox.png"), &dmnItem);
+	ptrCarro = CargaImagen(TEXT("Sprites/carro.png"), &dmnCarro);
+	ptrItem = CargaImagen(TEXT("Sprites/ItemBox.png"), &dmnItem);
 	ptrScore = CargaImagen(TEXT("UI/ScoreBG.png"), &dmnScore);
 }
 
@@ -946,7 +946,7 @@ void checkStart() {
 
 	if (KEYS[input.Enter] || START_pressed) {
 		gameStart = true;
-		PlaySoundA("song.WAV", NULL, SND_ASYNC);
+		PlaySoundA("Other/song.WAV", NULL, SND_ASYNC);
 		start = high_resolution_clock::now(); // empieza a contar los segundos
 	}
 }
